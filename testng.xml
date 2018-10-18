@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Maven_Test" parallel="tests" thread-count="1">
+    <test name="browsertest">
+        <classes>
+            <class name="com.damon.testcases.BaseCase"/>
+            <class name="com.damon.testcases.UnionpaySignTest"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.damon.util.ExtentTestNGIReporterListener"/>
+        <listener class-name="com.damon.util.FailureListener"/>
+    </listeners>
+</suite>
